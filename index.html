@@ -119,19 +119,18 @@ main #slide-1 p {
         <h1>r9cc: Step 10</h1>
                 <p>Twitter: @kaito_tateyama</p>
 <p></p>      </div>
-      <span class="page-number">r9cc: step 10 - 1 / 14</span>
+      <span class="page-number">r9cc: step 10 - 1 / 11</span>
     </div>
   </template>
     <template id="template-2">
     <div id="slide-2">
       <div class="container">
         <h1>目次</h1>
-                <p><a href="/#1" target="_blank" rel="noopener">r9ccの紹介</a></p>
-<p><a href="/#2" target="_blank" rel="noopener">Step10以前</a></p>
-<p><a href="/#2" target="_blank" rel="noopener">Step10</a></p>
-<p><a href="/#2" target="_blank" rel="noopener">今後の実装</a></p>
+                <p>r9ccの紹介</p>
+<p>Step10の実装</p>
+<p>今後の実装</p>
 <p></p>      </div>
-      <span class="page-number">r9cc: step 10 - 2 / 14</span>
+      <span class="page-number">r9cc: step 10 - 2 / 11</span>
     </div>
   </template>
     <template id="template-3">
@@ -142,8 +141,10 @@ main #slide-1 p {
 <p>- 僕が主に開発し、友人にアドバイスをもらっているプロジェクト</p>
 <p>- <span class="sld-em">Rust</span>製Cコンパイラ</p>
 <p>- Step11まで実装済み</p>
+<p></p>
+<p>気が向いた時に実装</p>
 <p></p>      </div>
-      <span class="page-number">r9cc: step 10 - 3 / 14</span>
+      <span class="page-number">r9cc: step 10 - 3 / 11</span>
     </div>
   </template>
     <template id="template-4">
@@ -153,7 +154,7 @@ main #slide-1 p {
                 <p>chibiccの return 実装時点でのLOCは524</p>
 <p><img src="./image-2.png" class="sld-left"/></p>
 <p></p>      </div>
-      <span class="page-number">r9cc: step 10 - 4 / 14</span>
+      <span class="page-number">r9cc: step 10 - 4 / 11</span>
     </div>
   </template>
     <template id="template-5">
@@ -163,104 +164,67 @@ main #slide-1 p {
                 <p>r9ccの return 実装時点でのLOCは<span class="sld-em">1312</span>, (chibicc x2...)</p>
 <p><img src="./image-3.png" class="sld-left"/></p>
 <p></p>      </div>
-      <span class="page-number">r9cc: step 10 - 5 / 14</span>
+      <span class="page-number">r9cc: step 10 - 5 / 11</span>
     </div>
   </template>
     <template id="template-6">
     <div id="slide-6">
       <div class="container">
         <h1>r9ccの紹介</h1>
-                <p>r9ccの return 実装時点でのLOCは<span class="sld-em">1312</span>, (chibicc x2...)</p>
-<p><img src="./image-3.png" class="sld-left"/></p>
+                <p>tokenizer: semicolonも一旦ASTに変換 → parserへ</p>
+<p><img src="./image-4.png" class="sld-left"/></p>
 <p></p>      </div>
-      <span class="page-number">r9cc: step 10 - 6 / 14</span>
+      <span class="page-number">r9cc: step 10 - 6 / 11</span>
     </div>
   </template>
     <template id="template-7">
     <div id="slide-7">
       <div class="container">
-        <h1>r9ccの紹介</h1>
-                <p>tokenizer: semicolonも一旦ASTに変換 → parserへ</p>
-<p><img src="./image-4.png" class="sld-left"/></p>
+        <h1>Step10の実装</h1>
+                <p>テストをreturn使うよう変更</p>
+<p>Pythonスクリプトで変換(テストケースはfile管理 → test.sh自動生成)</p>
+<p><figure><img src="./image-5.png" class="sld-left" alt="テストケース"/><figcaption>テストケース</figcaption></figure></p>
 <p></p>      </div>
-      <span class="page-number">r9cc: step 10 - 7 / 14</span>
+      <span class="page-number">r9cc: step 10 - 7 / 11</span>
     </div>
   </template>
     <template id="template-8">
     <div id="slide-8">
       <div class="container">
-        <h1>Link Page</h1>
-                <p>Hello, this is link page for tomlide.</p>
-<p>This is simple usage <a href="https://github.com/uta8a/tomlide" target="_blank" rel="noopener">https://github.com/uta8a/tomlide</a></p>
-<p>link alias usage: <a href="https://github.com/uta8a/tomlide" target="_blank" rel="noopener">Project repository</a></p>
-<p>slide alias usage: <a href="/#1" target="_blank" rel="noopener">slide 1</a></p>
-<p>&quot;hello&quot;</p>
+        <h1>Step10の実装</h1>
+                <p>変数がこれまでに出現しているか？ → HashMap</p>
+<p><figure><img src="./image-6.png" class="sld-left" alt="Parser構造体がlocal変数のHashMapを保持"/><figcaption>Parser構造体がlocal変数のHashMapを保持</figcaption></figure></p>
 <p></p>      </div>
-      <span class="page-number">r9cc: step 10 - 8 / 14</span>
+      <span class="page-number">r9cc: step 10 - 8 / 11</span>
     </div>
   </template>
     <template id="template-9">
     <div id="slide-9">
       <div class="container">
-        <h1>Image Page #1</h1>
-                <p>Overflow when there are many images.</p>
-<p><img src="./tomlide.v1.png" class="sld-left"/></p>
-<p><img src="https://avatars.githubusercontent.com/u/31395466?v=4" class="sld-left"/></p>
-<p><figure><img src="https://avatars.githubusercontent.com/u/31395466?v=4" class="sld-left" alt="alt and description"/><figcaption>alt and description</figcaption></figure></p>
-<p><a href="https://github.com/uta8a/tomlide" target="_blank" rel="noopener"><figure><img src="./tomlide.v1.png" class="sld-left" alt="image inside link</a>"/><figcaption>image inside link</a></figcaption></figure></p>
+        <h1>Step10の実装</h1>
+                <p>tokenizer: 変数判定 → パターンマッチ</p>
+<p><img src="./image-7.png" class="sld-left"/></p>
 <p></p>      </div>
-      <span class="page-number">r9cc: step 10 - 9 / 14</span>
+      <span class="page-number">r9cc: step 10 - 9 / 11</span>
     </div>
   </template>
     <template id="template-10">
     <div id="slide-10">
       <div class="container">
-        <h1>Image Page #2</h1>
-                <p>Image page</p>
-<p><img src="https://avatars.githubusercontent.com/u/31395466?v=4" class="sld-left"/></p>
+        <h1>今後の実装</h1>
+                <p>フィボナッチくらいはできるようになりたい</p>
+<p>(あわよくばセルフホストCコンパイラをコンパイルできる能力まで...)</p>
 <p></p>      </div>
-      <span class="page-number">r9cc: step 10 - 10 / 14</span>
+      <span class="page-number">r9cc: step 10 - 10 / 11</span>
     </div>
   </template>
     <template id="template-11">
     <div id="slide-11">
       <div class="container">
-        <h1>Image Page #3</h1>
-                <p>Image inside link (Click image!)</p>
-<p><a href="https://github.com/uta8a/tomlide" target="_blank" rel="noopener"><figure><img src="./tomlide.v1.png" class="sld-left" alt="image inside link</a>"/><figcaption>image inside link</a></figcaption></figure></p>
-<p></p>      </div>
-      <span class="page-number">r9cc: step 10 - 11 / 14</span>
-    </div>
-  </template>
-    <template id="template-12">
-    <div id="slide-12">
-      <div class="container">
-        <h1>Emoji Page</h1>
-                <p>Hello, this is emoji page for tomlide.</p>
-<p>I am cry. <img src="./1f62d.svg" class="sld-emoji-text"/></p>
-<p>I am happy! <img src="./1f389.svg" class="sld-emoji-text"/></p>
-<p></p>      </div>
-      <span class="page-number">r9cc: step 10 - 12 / 14</span>
-    </div>
-  </template>
-    <template id="template-13">
-    <div id="slide-13">
-      <div class="container">
-        <h1>Bold Page</h1>
-                <p>Hello, this is Bold page for tomlide.</p>
-<p><span class="sld-em">THIS IS BOLD STYLE</span></p>
-<p></p>      </div>
-      <span class="page-number">r9cc: step 10 - 13 / 14</span>
-    </div>
-  </template>
-    <template id="template-14">
-    <div id="slide-14">
-      <div class="container">
         <h1>Thank you!</h1>
-                <p>Do you have any questions?</p>
-<p>Feel free to ask me. <a href="https://github.com/uta8a/tomlide/discussions/3" target="_blank" rel="noopener">link to github/discussion</a></p>
+                <p>このスライドはdenoで作った自作slide生成器で、tomlから生成しています</p>
 <p></p>      </div>
-      <span class="page-number">r9cc: step 10 - 14 / 14</span>
+      <span class="page-number">r9cc: step 10 - 11 / 11</span>
     </div>
   </template>
   </main>

@@ -26,10 +26,9 @@ title = "r9cc: Step 10"
 
 [[slide]]
 text = """
-@[link: r9ccの紹介](@1)
-@[link: Step10以前](@2)
-@[link: Step10](@2)
-@[link: 今後の実装](@2)
+r9ccの紹介
+Step10の実装
+今後の実装
 """
 title = "目次"
 
@@ -39,6 +38,8 @@ text = """
 - 僕が主に開発し、友人にアドバイスをもらっているプロジェクト
 - @[*Rust*]製Cコンパイラ
 - Step11まで実装済み
+
+気が向いた時に実装
 """
 title = "r9ccの紹介"
 
@@ -58,13 +59,6 @@ title = "r9ccの紹介"
 
 [[slide]]
 text = """
-r9ccの return 実装時点でのLOCは@[*1312*], (chibicc x2...)
-@[image](./image-3.png)
-"""
-title = "r9ccの紹介"
-
-[[slide]]
-text = """
 tokenizer: semicolonも一旦ASTに変換 → parserへ
 @[image](./image-4.png)
 """
@@ -72,56 +66,35 @@ title = "r9ccの紹介"
 
 [[slide]]
 text = """
-Hello, this is link page for tomlide.
-This is simple usage @[link](https://github.com/uta8a/tomlide)
-link alias usage: @[link: Project repository](https://github.com/uta8a/tomlide)
-slide alias usage: @[link: slide 1](@1)
-"hello"
+テストをreturn使うよう変更
+Pythonスクリプトで変換(テストケースはfile管理 → test.sh自動生成)
+@[image: テストケース](./image-5.png)
 """
-title = "Link Page"
+title = "Step10の実装"
 
 [[slide]]
 text = """
-Overflow when there are many images.
-@[image](./tomlide.v1.png)
-@[image](https://avatars.githubusercontent.com/u/31395466?v=4)
-@[image: alt and description](https://avatars.githubusercontent.com/u/31395466?v=4)
-@[link: @[image: image inside link](https://github.com/uta8a/tomlide)](./tomlide.v1.png)
+変数がこれまでに出現しているか？ → HashMap
+@[image: Parser構造体がlocal変数のHashMapを保持](./image-6.png)
 """
-title = "Image Page #1"
+title = "Step10の実装"
 
 [[slide]]
 text = """
-Image page
-@[image](https://avatars.githubusercontent.com/u/31395466?v=4)
+tokenizer: 変数判定 → パターンマッチ
+@[image](./image-7.png)
 """
-title = "Image Page #2"
+title = "Step10の実装"
 
 [[slide]]
 text = """
-Image inside link (Click image!)
-@[link: @[image: image inside link](https://github.com/uta8a/tomlide)](./tomlide.v1.png)
+フィボナッチくらいはできるようになりたい
+(あわよくばセルフホストCコンパイラをコンパイルできる能力まで...)
 """
-title = "Image Page #3"
+title = "今後の実装"
 
 [[slide]]
 text = """
-Hello, this is emoji page for tomlide.
-I am cry. @[:sob:]
-I am happy! @[:tada:]
-"""
-title = "Emoji Page"
-
-[[slide]]
-text = """
-Hello, this is Bold page for tomlide.
-@[*THIS IS BOLD STYLE*]
-"""
-title = "Bold Page"
-
-[[slide]]
-text = """
-Do you have any questions?
-Feel free to ask me. @[link: link to github/discussion](https://github.com/uta8a/tomlide/discussions/3)
+このスライドはdenoで作った自作slide生成器で、tomlから生成しています
 """
 title = "Thank you!"

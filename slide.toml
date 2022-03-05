@@ -2,13 +2,13 @@
 
 # Site metadata (OGP, title, ...)
 [meta]
-title= "Sample Slide for tomlide"
-og_url = "https://uta8a.github.io/tomlide.example/"
-og_title = "Sample Slide for tomlide"
 og_image = "https://uta8a.github.io/tomlide.example/tomlide.v1.png"
-og_image_width = "600"
-og_image_height = "300"
 og_image_description = "Simple slide generator"
+og_image_height = "300"
+og_image_width = "600"
+og_title = "Sample Slide for tomlide"
+og_url = "https://uta8a.github.io/tomlide.example/"
+title = "r9cc: step 10"
 # twitter_card: summary | summary_large_image
 twitter_card = "summary_large_image"
 # twitter_creator: @<username>
@@ -19,27 +19,58 @@ twitter_image = "https://uta8a.github.io/tomlide.example/tomlide.v1.png"
 icon = "https://uta8a.github.io/tomlide.example/tomlide.v1.png"
 
 [[slide]]
-title = "Sample Slide for tomlide"
 text = """
 Twitter: @kaito_tateyama
 """
+title = "r9cc: Step 10"
 
 [[slide]]
-title = "First Page"
 text = """
-Hello, this is sample page for tomlide.
-This is sample text. <div>hello</div>
-こんにちは。これはサンプルスライドです。
+@[link: r9ccの紹介](@1)
+@[link: Step10以前](@2)
+@[link: Step10](@2)
+@[link: 今後の実装](@2)
 """
+title = "目次"
 
 [[slide]]
-title = "Second Page - 2枚目"
 text = """
-tomlide is simple toml-based slide generator.
+@[link](https://github.com/dhivelopers/r9cc)
+- 僕が主に開発し、友人にアドバイスをもらっているプロジェクト
+- @[*Rust*]製Cコンパイラ
+- Step11まで実装済み
 """
+title = "r9ccの紹介"
 
 [[slide]]
-title = "Link Page"
+text = """
+chibiccの return 実装時点でのLOCは524
+@[image](./image-2.png)
+"""
+title = "r9ccの紹介"
+
+[[slide]]
+text = """
+r9ccの return 実装時点でのLOCは@[*1312*], (chibicc x2...)
+@[image](./image-3.png)
+"""
+title = "r9ccの紹介"
+
+[[slide]]
+text = """
+r9ccの return 実装時点でのLOCは@[*1312*], (chibicc x2...)
+@[image](./image-3.png)
+"""
+title = "r9ccの紹介"
+
+[[slide]]
+text = """
+tokenizer: semicolonも一旦ASTに変換 → parserへ
+@[image](./image-4.png)
+"""
+title = "r9ccの紹介"
+
+[[slide]]
 text = """
 Hello, this is link page for tomlide.
 This is simple usage @[link](https://github.com/uta8a/tomlide)
@@ -47,9 +78,9 @@ link alias usage: @[link: Project repository](https://github.com/uta8a/tomlide)
 slide alias usage: @[link: slide 1](@1)
 "hello"
 """
+title = "Link Page"
 
 [[slide]]
-title = "Image Page #1"
 text = """
 Overflow when there are many images.
 @[image](./tomlide.v1.png)
@@ -57,39 +88,40 @@ Overflow when there are many images.
 @[image: alt and description](https://avatars.githubusercontent.com/u/31395466?v=4)
 @[link: @[image: image inside link](https://github.com/uta8a/tomlide)](./tomlide.v1.png)
 """
+title = "Image Page #1"
 
 [[slide]]
-title = "Image Page #2"
 text = """
 Image page
 @[image](https://avatars.githubusercontent.com/u/31395466?v=4)
 """
+title = "Image Page #2"
 
 [[slide]]
-title = "Image Page #3"
 text = """
 Image inside link (Click image!)
 @[link: @[image: image inside link](https://github.com/uta8a/tomlide)](./tomlide.v1.png)
 """
+title = "Image Page #3"
 
 [[slide]]
-title = "Emoji Page"
 text = """
 Hello, this is emoji page for tomlide.
 I am cry. @[:sob:]
 I am happy! @[:tada:]
 """
+title = "Emoji Page"
 
 [[slide]]
-title = "Bold Page"
 text = """
 Hello, this is Bold page for tomlide.
 @[*THIS IS BOLD STYLE*]
 """
+title = "Bold Page"
 
 [[slide]]
-title = "Thank you!"
 text = """
 Do you have any questions?
 Feel free to ask me. @[link: link to github/discussion](https://github.com/uta8a/tomlide/discussions/3)
 """
+title = "Thank you!"

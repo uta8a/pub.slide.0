@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: denoland/setup-deno@v1
       - name: Generate dist
-        run: deno run --allow-read --allow-net --allow-write --unstable https://raw.githubusercontent.com/uta8a/tomlide/main/cli.ts
+        run: deno run --allow-read --allow-net --allow-write --unstable --reload https://raw.githubusercontent.com/uta8a/tomlide/main/cli.ts
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
